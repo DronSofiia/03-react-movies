@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import SearchBar from '../SearchBar/SearchBar'
-import Loader from '../Loader/Loader'
-import type { Movie } from '../types/movie';
-import fetchMovies from '../services/movieService';
+import Loader from '../ErrorMessage/Loader/Loader'
+import type { Movie } from '../../types/movie';
+import fetchMovies from '../../services/movieService';
 import toast, { Toaster } from 'react-hot-toast';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import MovieGrid from '../MovieGrid/MovieGrid';
