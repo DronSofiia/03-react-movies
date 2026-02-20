@@ -13,7 +13,8 @@ interface SearchBarProps{
         
 
          if (!query) {
-            toast.error('Please enter your search query.')
+             toast.error('Please enter your search query.');
+             return
          };
 
          onSubmit(query);
