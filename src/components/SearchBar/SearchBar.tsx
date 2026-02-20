@@ -12,9 +12,11 @@ interface SearchBarProps{
          const query = formData.get("query") as string;
          onSubmit(query);
 
-         if (query === "") {
+         if (!query) {
             toast.error('Please enter your search query.')
          };
+
+         onSubmit(query);
      };
 
     
